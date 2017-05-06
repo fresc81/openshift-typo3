@@ -6,9 +6,11 @@ build_config
 # Uncomment the following line to use Composer and automatically install dependencies on deploy.
 #
 
-cd $OPENSHIFT_REPO_DIR/typo3; composer install
+cd $OPENSHIFT_REPO_DIR/typo3; composer install --no-dev
 cd $OPENSHIFT_REPO_DIR/www
 
 ln -s ../typo3 typo3_src
 ln -s typo3_src/index.php
 ln -s typo3_src/typo3
+
+touch FIRST_INSTALL
