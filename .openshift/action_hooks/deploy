@@ -19,6 +19,7 @@ cd ${OPENSHIFT_DATA_DIR}/www
 ln -sf ${OPENSHIFT_REPO_DIR}/typo3_src typo3_src
 ln -sf typo3_src/index.php
 ln -sf typo3_src/typo3
+ln -sf ${OPENSHIFT_REPO_DIR}/ext typo3/ext
 
 if [ ! -f typo3conf/LocalConfiguration.php ]; then
     echo "Typo3 config not found!"
