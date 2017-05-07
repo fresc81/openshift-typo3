@@ -6,7 +6,7 @@ build_config
 # Uncomment the following line to use Composer and automatically install dependencies on deploy.
 #
 
-cd $OPENSHIFT_HOME_DIR/app-root/data
+cd app-root/data
 mkdir -p fileadmin
 mkdir -p typo3conf
 mkdir -p typo3temp
